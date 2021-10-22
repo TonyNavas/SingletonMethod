@@ -6,4 +6,11 @@ public class Comercial {
     private static Comercial _instance = null;
 
     private Comercial(){}
+
+    public static Comercial Instance()
+    {
+        if (_instance == null)
+            _instance = new Comercial();
+        return _instance;
+    }
 }

@@ -13,4 +13,11 @@ public class Comercial {
             _instance = new Comercial();
         return _instance;
     }
+
+    public void visualiza()
+    {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Email: " + email);
+    }
 }
